@@ -136,16 +136,13 @@ function showSkills() {
         { name: "ReactJS", icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" },
         { name: "Next.js", icon: "https://img.icons8.com/color/48/000000/nextjs.png" },
         { name: "NodeJS", icon: "https://img.icons8.com/color/48/000000/nodejs.png" },
-        { name: "Android", icon: "https://img.icons8.com/fluency/48/000000/android-os.png" },
-        { name: "TailwindCSS", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png" },
+        { name: "TailwindCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
         { name: "Bootstrap", icon: "https://img.icons8.com/color/48/000000/bootstrap.png" },
         { name: "HTML5", icon: "https://img.icons8.com/color/48/000000/html-5--v1.png" },
         { name: "CSS3", icon: "https://img.icons8.com/color/48/000000/css3.png" },
         { name: "JavaScript", icon: "https://img.icons8.com/color/48/000000/javascript--v1.png" },
         { name: "TypeScript", icon: "https://img.icons8.com/color/48/000000/typescript.png" },
         { name: "Java", icon: "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" },
-        { name: "Kotlin", icon: "https://img.icons8.com/color/48/000000/kotlin.png" },
-        { name: "Python", icon: "https://img.icons8.com/color/48/000000/python--v1.png" },
         { name: "MySQL", icon: "https://img.icons8.com/color/48/000000/mysql-logo.png" },
         { name: "Git", icon: "https://img.icons8.com/color/48/000000/git.png" },
         { name: "GitHub", icon: "https://img.icons8.com/glyph-neue/48/ffffff/github.png" },
@@ -158,12 +155,12 @@ function showSkills() {
 
     skills.forEach(skill => {
         skillHTML += `
-        <div class="bar">
-            <div class="info">
-                <img src="${skill.icon}" alt="${skill.name}" />
-                <span>${skill.name}</span>
-            </div>
-        </div>`;
+<div class="bar">
+    <div class="info">
+        <img src="${skill.icon}" alt="${skill.name}" width="48" height="48" style="width:48px;height:48px;object-fit:contain;" />
+        <span>${skill.name}</span>
+    </div>
+</div>`;
     });
 
     skillsContainer.innerHTML = skillHTML;
@@ -196,7 +193,7 @@ function showProjects() {
         {
             name: "Currency Converter",
             desc: "A web application built with HTML, CSS, and JavaScript that uses a real-time exchange rate API to convert between global currencies instantly.",
-            image: "currencyconverter",
+            image: "currency-converter",
             links: {
                 view: "https://thejeshchowdary.github.io/Currency-Converter/",
                 code: "https://github.com/ThejeshChowdary/Currency-Converter"
