@@ -200,6 +200,16 @@ function showProjects() {
             },
             category: "basicweb"
         },
+        {
+            name: "CineScopeX",
+            desc: "CineScopeX is a modern movie browsing platform built with Next.js and TypeScript. It allows users to explore trending, popular, and upcoming movies, view detailed information like ratings, genres, and release dates, and search for their favorite films in real time using movie APIs.",
+            image: "cinescopex",
+            links: {
+                view: "https://cinescopex.vercel.app/",
+                code: "https://github.com/ThejeshChowdary/cinescopex"
+            },
+            category: "webapp"
+        },
     ];
 
     let projectsContainer = document.querySelector("#work .box-container");
